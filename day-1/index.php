@@ -21,7 +21,7 @@ foreach( $cleaned as $elf => $food ) {
     $greediest = $elf;
   }
 
-  echo "Elf #{$elf} is carrying {$total} calories. \n";
+  // echo "Elf #{$elf} is carrying {$total} calories. \n";
 }
 
-echo "Elf #{$greediest} is the greedest. \n";
+echo "Elf #{$greediest} is the greedest, he is carrying {$most} calories. \n";

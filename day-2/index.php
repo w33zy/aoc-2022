@@ -31,4 +31,4 @@ foreach( $cleaned as $elf => $food ) {
 
 }
 
-echo $first + $second + $third;
+echo 'The top 3 elfs are carrying ' . $first + $second + $third . ' calories';
