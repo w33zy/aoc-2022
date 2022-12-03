@@ -7,7 +7,7 @@ $input     = file( './input.txt' );
 $cleaned   = [];
 
 foreach( $input as $line ) { 
- if ( $line !== "\r\n" ) {
+ if ( (int) $line ) {
   $cleaned[ $elf ][] = $line;
  } else {
   $elf++;  
@@ -16,12 +16,13 @@ foreach( $input as $line ) {
 
 foreach( $cleaned as $elf => $food ) {  
   $total = array_sum( $food );
+
   if ( $most < $total ) {
     $most = $total;
     $greediest = $elf;
   }
 
-  // echo "Elf #{$elf} is carrying {$total} calories. \n";
+  printf( "Elf #%s is carrying %s calories. \n", $elf, $total );
 }
 
-echo "Elf #{$greediest} is the greedest, he is carrying {$most} calories. \n";
+printf( "Elf %s is the greedest, he is carrying %s calories.", $greediest, $most );
