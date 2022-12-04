@@ -25,4 +25,4 @@ foreach( $cleaned as $elf => $food ) {
   printf( "Elf #%s is carrying %s calories. \n", $elf, $total );
 }
 
-printf( "Elf %s is the greedest, he is carrying %s calories.", $greediest, $most );
+printf( "Elf %s is the greediest, he is carrying %s calories.", $greediest, $most );
